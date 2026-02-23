@@ -53,8 +53,8 @@ This section describes the required tools and environment setup for the zephyr p
 Below are the software requirements for Zephyr for Microchip dsPIC.
 
 *   Links for Zephyr repository and microchip boards
-    *   [https://github.com/Zephyr4Microchip/zephyr](https://github.com/Zephyr4Microchip/zephyr)
-    *   [https://github.com/Zephyr4Microchip/zephyr/tree/main/boards/microchip](https://github.com/Zephyr4Microchip/zephyr/tree/main/boards/microchip)
+    *   [https://github.com/Zephyr4Microchip/zephyr/tree/dsPIC33A](https://github.com/Zephyr4Microchip/zephyr/tree/dsPIC33A)
+    *   [https://github.com/Zephyr4Microchip/zephyr/tree/dsPIC33A/boards/microchip](https://github.com/Zephyr4Microchip/zephyr/tree/dsPIC33A/boards/microchip)
 *   Tools and setup mentioned in the zephyr repo setup : [**Getting Started Guide — Zephyr Project Documentation**](https://docs.zephyrproject.org/latest/develop/getting_started/index.html)**_._**
 *   xc-dsc compiler version 3.31:
     *   Windows : [xc-dsc compiler for Windows](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc-dsc)
