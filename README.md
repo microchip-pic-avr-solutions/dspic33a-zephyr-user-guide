@@ -83,6 +83,7 @@ Below are the hardware requirements for Zephyr for Microchip dsPIC.
     *   Linux : [**xc-dsc compiler for Linux**](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc-dsc)
 *   Install MPLAB IDE (v6.25 or later).
     *   [**MPLAB® X IDE | Microchip Technology**](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
+    *    Make sure to install the MPLABX IPE along with MPLABX IDE
 *   Install the dependencies (python, cmake and device tree compiler) for zephyr build.
 
 ### Windows:
@@ -99,7 +100,7 @@ winget install Kitware.CMake Ninja-build.Ninja oss-winget.gperf Python.Python.3.
 
 ```
 cmd > cmake --version //ensure cmake version is 4.0.2 or later
-cmd > python3 --version //ensure python version is 3.12.11 or later
+cmd > python3 --version //ensure python version is 3.12.11 or later , some system python command works instead of python3
 cmd > dtc --version //ensure dtc version is 1.6.1 or later
 ```
 
@@ -112,7 +113,7 @@ cmd > cd %HOMEPATH% (if environmenet variable is not defined use the home direct
 cmd > python -m venv zephyrproject\.venv
 cmd > zephyrproject\.venv\Scripts\activate.bat
 cmd > pip install west
-cmd > west init -m <URL> zephyrproject
+cmd > west init -m https://github.com/Zephyr4Microchip/zephyr --mr dsPIC33A zephyrproject
 cmd > cd zephyrproject
 cmd > west update
 cmd > west zephyr-export
@@ -126,7 +127,7 @@ cmd > python -m venv zephyrproject\.venv
 cmd > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 cmd > zephyrproject\.venv\Scripts\Activate.ps1
 cmd > pip install west
-cmd > west init -m <URL> zephyrproject
+cmd > west init -m https://github.com/Zephyr4Microchip/zephyr --mr dsPIC33A zephyrproject
 cmd > cd zephyrproject
 cmd > west update
 cmd > west zephyr-export
@@ -188,7 +189,7 @@ cmd > dtc - -version, Ensure dtc version is 1.6.1 or later
 cmd > python3 -m venv zephyrproject/.venv
 cmd > source zephyrproject/.venv/bin/activate
 cmd > pip install west
-cmd > west init -m <URL> zephyrproject
+cmd > west init -m https://github.com/Zephyr4Microchip/zephyr --mr dsPIC33A zephyrproject
 cmd > cd zephyrproject
 cmd > west update
 cmd > west zephyr-export
@@ -228,7 +229,8 @@ west build -p always -b dspic33a_curiosity/p33ak512mps512 samples/hello_world/ -
 
 *   Install the latest version (v6.25 and later) of MPLAB X IDE, MDB is installed as part of installation of MPLAB X IDE.
 *   Check the board is detected, use the “Device Manager”->” Ports”.
-*   Type in “**mdb**” in command prompt or in powershell to launch debugger, this will start a debugger session.
+*   Type in “**mdb**” in command prompt or in powershell to launch debugger, this will start a debugger session. If the command is not recognized make sure the mdb path(mplab_platform/bin)
+    is added to the PATH environment variable.
 
     <img src="images/mdb1.png" alt="XCDSC" />
 
