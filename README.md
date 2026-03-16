@@ -131,7 +131,7 @@ cmd > west init -m https://github.com/Zephyr4Microchip/zephyr --mr dsPIC33A zeph
 cmd > cd zephyrproject
 cmd > west update
 cmd > west zephyr-export
-cmd > west packages pip –install
+cmd > west packages pip --install
 ```
 
 *   7.  Use the west command to build the code, as shown in the below image.
@@ -193,7 +193,7 @@ cmd > west init -m https://github.com/Zephyr4Microchip/zephyr --mr dsPIC33A zeph
 cmd > cd zephyrproject
 cmd > west update
 cmd > west zephyr-export
-cmd > west packages pip –install
+cmd > west packages pip --install
 ```
 
 *   4.  Set the environment variables. Use the commands as in the below image to set the environment variables.
