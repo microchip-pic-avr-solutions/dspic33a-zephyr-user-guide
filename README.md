@@ -117,7 +117,7 @@ cmd > west init -m https://github.com/Zephyr4Microchip/zephyr --mr dsPIC33A zeph
 cmd > cd zephyrproject
 cmd > west update
 cmd > west zephyr-export
-cmd > west packages pip –install
+cmd > west packages pip --install
 ```
 
 *   6.  Or clone zephyr repository using the following commands in powershell:_
