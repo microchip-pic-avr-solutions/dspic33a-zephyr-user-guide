@@ -68,6 +68,7 @@ Below are the hardware requirements for Zephyr for Microchip dsPIC.
 *   Curiosity platform development board – [EV74H48A](https://www.microchip.com/EV74H48A)
 *   dsPIC33AK128MC106 General Purpose Dual In-Line Module (DIM) - [EV02G02A](https://www.microchip.com/EV02G02A)
 *   dsPIC33AK512MPS512 General Purpose Dual In-Line Module (DIM) - [EV80L65A](https://www.microchip.com/EV80L65A)
+*   The full list of supported Microchip boards/SOC's is available in the Zephyr repository - [boards](https://github.com/Zephyr4Microchip/zephyr/blob/dsPIC33A/boards/microchip/dspic33/dspic33a_curiosity/board.yml)
 *   USB Type C cable.
 
 # Execution guidelines
